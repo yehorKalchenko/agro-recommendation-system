@@ -1,0 +1,17 @@
+name: Early blight (альтернаріоз)
+crops_supported: [potato]
+stage_window: ["vegetative", "tubering"]
+symptoms:
+  - "темні концентричні кільця на листі"
+  - "передчасне жовтіння"
+visual_patterns:
+  - "brown concentric rings"
+actions:
+  diagnostics:
+    - "огляд нижніх листків на кільця"
+  agronomy:
+    - "збалансоване живлення, видалення рослинних решток"
+  chemical:
+    - "фунгіцид за етикеткою (регуляції)"
+  bio:
+    - "екстракти Bacillus spp. (де дозволено)"

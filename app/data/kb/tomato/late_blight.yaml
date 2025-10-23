@@ -1,0 +1,18 @@
+name: Late blight (фітофтороз)
+crops_supported: [tomato]
+stage_window: ["vegetative", "flowering", "fruiting"]
+symptoms:
+  - "бурі водянисті плями на листі"
+  - "швидке в'янення у вологу погоду"
+visual_patterns:
+  - "water-soaked lesions"
+  - "білий пухнастий наліт знизу листка у вологу погоду"
+actions:
+  diagnostics:
+    - "перевірити наявність водянистих плям після дощу"
+  agronomy:
+    - "видалити уражені рештки, забезпечити аерацію"
+  chemical:
+    - "мідьвмісні фунгіциди (узгодити з локальними регуляціями)"
+  bio:
+    - "триходерма як біокontrol (за наявності)"

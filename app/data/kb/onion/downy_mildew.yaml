@@ -1,0 +1,17 @@
+name: Downy mildew (пероноспороз цибулі)
+crops_supported: [onion]
+stage_window: ["vegetative"]
+symptoms:
+  - "світлі овальні плями, що згодом жовтіють"
+  - "сірувато-фіолетовий наліт знизу листка"
+visual_patterns:
+  - "downy growth on underside"
+actions:
+  diagnostics:
+    - "огляд у вологу погоду на наліт знизу листка"
+  agronomy:
+    - "сівозміна, зменшення густоти посіву"
+  chemical:
+    - "фунгіцид за етикеткою (перевірити регуляції)"
+  bio:
+    - "біоконтроль за рекомендаціями"

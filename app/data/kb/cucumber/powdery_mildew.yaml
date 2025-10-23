@@ -1,0 +1,17 @@
+name: Powdery mildew (мучниста роса)
+crops_supported: [cucumber]
+stage_window: ["vegetative", "flowering", "fruiting"]
+symptoms:
+  - "білий борошнистий наліт на верхній стороні листка"
+  - "жовті плями, що розширюються"
+visual_patterns:
+  - "white powdery growth"
+actions:
+  diagnostics:
+    - "візуальна перевірка ранком у суху погоду"
+  agronomy:
+    - "покращити вентиляцію, уникати перезволоження листя"
+  chemical:
+    - "сірковмісні препарати (перевірити регуляції)"
+  bio:
+    - "молочна сироватка/біопрепарати (де дозволено)"

@@ -1,0 +1,17 @@
+name: White rot (біла гниль часнику)
+crops_supported: [garlic]
+stage_window: ["vegetative"]
+symptoms:
+  - "пожовтіння і в'янення листків"
+  - "білий вато-подібний міцелій біля основи"
+visual_patterns:
+  - "white fluffy mycelium at base"
+actions:
+  diagnostics:
+    - "перевірити шийку на білий міцелій"
+  agronomy:
+    - "сівозміна 4–5 років, санітарія інструментів"
+  chemical:
+    - "протруйники/фунгіциди (за регуляціями)"
+  bio:
+    - "біопрепарати проти Sclerotium (за наявності)"

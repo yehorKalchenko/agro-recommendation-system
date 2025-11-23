@@ -1,0 +1,16 @@
+{
+  "crop": "cucumber",
+  "growth_stage": "vegetative",
+  "location": {
+    "lat": 0.0,
+    "lon": 0.0
+  },
+  "symptoms_text": "білий наліт на листі",
+  "_images": [
+    {
+      "filename": "muchnistaja-rosa-ogurcov.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 71994
+    }
+  ]
+}

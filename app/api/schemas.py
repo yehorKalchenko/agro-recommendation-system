@@ -1,5 +1,5 @@
-from typing import List, Optional
-from pydantic import BaseModel, Field, conlist
+from typing import List, Optional, Dict
+from pydantic import BaseModel, Field
 
 SUPPORTED_CROPS = {"potato", "onion", "garlic", "tomato", "cucumber"}
 
@@ -25,7 +25,7 @@ class Candidate(BaseModel):
     disease: str
     score: float = Field(ge=0, le=1)
     rationale: str
-    kb_refs: Optional[conlist(KBRef, max_items=5)] = None
+    kb_refs: Optional[List[KBRef]] = Field(default=None, max_length=5)
 
 class ActionPlan(BaseModel):
     diagnostics: List[str] = []
@@ -33,8 +33,14 @@ class ActionPlan(BaseModel):
     chemical: List[str] = []  # textual placeholders in MVP
     bio: List[str] = []
 
+class DebugInfo(BaseModel):
+    timings: Dict[str, float] = Field(default_factory=dict) 
+    components: Dict[str, str] = Field(default_factory=dict)
+    workspace_path: Optional[str] = None
+
 class DiagnoseResponse(BaseModel):
     case_id: str
     candidates: List[Candidate]
     plan: ActionPlan
     disclaimers: List[str] = []
+    debug: Optional[DebugInfo] = None

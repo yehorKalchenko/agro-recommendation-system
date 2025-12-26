@@ -1,0 +1,23 @@
+name: Anthracnose (антракноз)
+crops_supported: [cucumber]
+stage_window: ["vegetative", "flowering", "fruiting"]
+symptoms:
+  - "круглі бурі плями на листках"
+  - "вдавлені коричневі плями на плодах"
+  - "рожевий слиз у центрі плям у вологу погоду"
+visual_patterns:
+  - "circular brown spots on leaves"
+  - "sunken brown spots on fruits"
+  - "pink slime in humid conditions"
+actions:
+  diagnostics:
+    - "перевірити наявність круглих плям на листі"
+    - "оглянути плоди на вдавлені ділянки"
+  agronomy:
+    - "видалення уражених частин"
+    - "сівозміна (мінімум 2 роки)"
+    - "уникати overhead irrigation"
+  chemical:
+    - "фунгіциди на основі хлороталонілу (за регуляціями)"
+  bio:
+    - "bacillus subtilis як біоконтроль"

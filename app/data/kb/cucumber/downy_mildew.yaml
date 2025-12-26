@@ -1,0 +1,23 @@
+name: Downy mildew (несправжня борошниста роса)
+crops_supported: [cucumber]
+stage_window: ["vegetative", "flowering", "fruiting"]
+symptoms:
+  - "жовті плями на верхній поверхні листка"
+  - "сіро-фіолетовий наліт знизу листка"
+  - "швидке засихання листя у вологу погоду"
+visual_patterns:
+  - "yellow spots on upper leaf surface"
+  - "gray-purple mold on underside"
+  - "downy пероноспороз"
+actions:
+  diagnostics:
+    - "перевірити нижню сторону листка на наліт"
+    - "оцінити наявність жовтих плям зверху"
+  agronomy:
+    - "зменшити вологість в теплиці/тунелі"
+    - "забезпечити хорошу вентиляцію"
+    - "уникати зрошення по листю"
+  chemical:
+    - "системні фунгіциди (металаксил, фосетил-Al за регуляціями)"
+  bio:
+    - "bacillus amyloliquefaciens як профілактика"

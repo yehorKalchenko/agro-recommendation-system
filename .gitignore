@@ -206,4 +206,34 @@ override.tf.json
 .terraformrc
 terraform.rc
 
-# End of https://www.toptal.com/developers/gitignore/api/python,terraform
+test-artifacts/
+*.json
+rekognition_debug.txt
+
+# Runtime data (diagnosis cases)
+data/cases/
+
+# Database files
+*.db
+*.sqlite
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+nul
+tmp/
+temp/
+
+*.jpeg
+*.png
+
+DEMO*

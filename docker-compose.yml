@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: agrodiag-postgres
+    environment:
+      POSTGRES_USER: agrodiag
+      POSTGRES_PASSWORD: agrodiag123
+      POSTGRES_DB: agrodiag
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U agrodiag"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # Optional: pgAdmin for database management
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: agrodiag-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@agrodiag.local
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    ports:
+      - "5050:80"
+    depends_on:
+      - postgres
+    restart: unless-stopped
+    profiles:
+      - admin  # Optional service, enable with: docker-compose --profile admin up
+
+volumes:
+  postgres_data:
+    driver: local

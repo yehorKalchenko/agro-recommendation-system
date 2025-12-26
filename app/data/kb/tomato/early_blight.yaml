@@ -1,0 +1,23 @@
+name: Early blight (альтернаріоз)
+crops_supported: [tomato]
+stage_window: ["vegetative", "flowering", "fruiting"]
+symptoms:
+  - "круглі концентричні плями на старих листках"
+  - "жовтіння та відмирання нижнього листя"
+  - "темно-коричневі некротичні плями з кільцями"
+visual_patterns:
+  - "concentric rings on lesions (target spot)"
+  - "yellowing of lower leaves"
+  - "dark brown spots with rings"
+actions:
+  diagnostics:
+    - "перевірити наявність концентричних кілець на плямах"
+    - "оцінити ураження нижніх листків"
+  agronomy:
+    - "видалити уражене листя"
+    - "забезпечити хорошу циркуляцію повітря"
+    - "мульчування для зменшення контакту з ґрунтом"
+  chemical:
+    - "фунгіциди на основі хлороталонілу або манкоцебу (згідно регуляцій)"
+  bio:
+    - "bacillus subtilis як біофунгіцид"

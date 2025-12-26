@@ -1,7 +1,10 @@
 from typing import List, Optional, Dict
 from pydantic import BaseModel, Field
 
-SUPPORTED_CROPS = {"potato", "onion", "garlic", "tomato", "cucumber"}
+SUPPORTED_CROPS = {
+    "potato", "onion", "garlic", "tomato", "cucumber",
+    "pepper", "cabbage", "carrot", "beet", "wheat"
+}
 
 class GeoPoint(BaseModel):
     lat: float
@@ -43,4 +46,15 @@ class DiagnoseResponse(BaseModel):
     candidates: List[Candidate]
     plan: ActionPlan
     disclaimers: List[str] = []
+    visual_features: Optional[Dict[str, float]] = None
     debug: Optional[DebugInfo] = None
+
+class CaseSummary(BaseModel):
+    case_id: str
+    date: str
+    crop: str
+    symptoms_preview: str = Field(max_length=100)
+
+class CaseListResponse(BaseModel):
+    cases: List[CaseSummary]
+    total: int

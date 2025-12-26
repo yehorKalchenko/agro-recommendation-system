@@ -1,0 +1,23 @@
+name: Fusarium rot (фузаріозна гниль)
+crops_supported: [garlic]
+stage_window: ["vegetative", "bulbing", "storage"]
+symptoms:
+  - "жовтіння та в'янення листя"
+  - "м'яка гниль донця цибулини"
+  - "рожевий або білий міцелій на корінні"
+visual_patterns:
+  - "wilting and yellowing"
+  - "soft basal rot"
+  - "pink or white mycelium on roots"
+actions:
+  diagnostics:
+    - "перевірити донце цибулини на м'якість"
+    - "оглянути корені на наявність міцелію"
+  agronomy:
+    - "використання здорового посадкового матеріалу"
+    - "сівозміна (мінімум 4 роки)"
+    - "уникати пошкодження донця"
+  chemical:
+    - "протруювання цибулин перед посадкою (за регуляціями)"
+  bio:
+    - "trichoderma для обробки ґрунту"
